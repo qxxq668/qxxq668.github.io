@@ -71,6 +71,90 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-博客搭建" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="article-date">
+  <time class="dt-published" datetime="2022-01-12T09:36:18.069Z" itemprop="datePublished">2022-01-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="如何搭建博客"><a href="#如何搭建博客" class="headerlink" title="如何搭建博客"></a>如何搭建博客</h1><p>环境搭建：</p>
+<p>1、node环境下载</p>
+<p>2、git下载</p>
+<p>3、Hexo下载</p>
+<hr>
+<h3 id="1、将本地仓库与远程仓库连接"><a href="#1、将本地仓库与远程仓库连接" class="headerlink" title="1、将本地仓库与远程仓库连接"></a>1、将本地仓库与远程仓库连接</h3><p>1、创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。</p>
+<p>2、配置用户名和邮箱 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;xxxx&quot;</span><br><span class="line">git config --global user.email &quot;xxxx&quot;</span><br></pre></td></tr></table></figure>
+
+<p>配置成功后会在C盘下生成</p>
+<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20220112171907945.png" alt="image-20220112171907945"></p>
+<p>3、生成ssh添加到github </p>
+<p>在C:\Users\86183.ssh下使用git bash here</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;xxxxxxx@qq.com&quot; -f &quot;github_id_rsa&quot;</span><br></pre></td></tr></table></figure>
+
+<p>将生成的github_id_rsa.pub文件中数据复制到<a target="_blank" rel="noopener" href="https://github.com/settings/keys">https://github.com/settings/keys</a></p>
+<p>然后进行测试是否连接成功，使用git bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20220112172231033.png" alt="image-20220112172231033"></p>
+<p>测试成功后会在C:\Users\86183.ssh下生成</p>
+<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20220112172332887.png" alt="image-20220112172332887"></p>
+<h5 id="Git使用出现-103-x69-x74-x40-103-x69-x74-104-x75-x62-x2e-x63-x6f-x6d-Permission-denied-publickey-处理"><a href="#Git使用出现-103-x69-x74-x40-103-x69-x74-104-x75-x62-x2e-x63-x6f-x6d-Permission-denied-publickey-处理" class="headerlink" title="Git使用出现&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;: Permission denied (publickey). 处理"></a>Git使用出现<a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a>: Permission denied (publickey). 处理</h5><p>$ ssh-add ~/.ssh/id_rsa 出现Could not open a connection to your authentication agent. 这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name</p>
+<hr>
+<h3 id="2、下载hexo"><a href="#2、下载hexo" class="headerlink" title="2、下载hexo"></a>2、下载hexo</h3><p>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后<code>cd</code>到这个文件夹下</p>
+<p>输入命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>依旧用<code>hexo -v</code>查看一下版本</p>
+<p>至此就全部安装完了。</p>
+<p>切换到指定文件下，初始化hexo，管理员身份运行cmd</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>新建完成后，指定文件夹目录下有：</p>
+<ul>
+<li>node_modules: 依赖包</li>
+<li>public：存放生成的页面</li>
+<li>scaffolds：生成文章的一些模板</li>
+<li>source：用来存放你的文章</li>
+<li>themes：主题</li>
+<li>** _config.yml: 博客的配置文件**</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>
+<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20220112173209497.png" alt="image-20220112173209497"></p>
+<p>ctrl+c关闭服务</p>
+<hr>
+<h3 id="3、将hexo部署到github上"><a href="#3、将hexo部署到github上" class="headerlink" title="3、将hexo部署到github上"></a>3、将hexo部署到github上</h3><p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为<br>xxxxx就是你的GitHub账户</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/xxxx/xxxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20220112173511924.png" alt="image-20220112173511924"></p>
+<h3 id="4、发布文章"><a href="#4、发布文章" class="headerlink" title="4、发布文章"></a>4、发布文章</h3><p>直接在source下_posts新建md文件即可，重复上述步骤</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ckybcmykc00006sk9abs19d0z" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-bom接口文档" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/01/12/bom%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/" class="article-date">
@@ -319,6 +403,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2022/01/12/bom%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/">(no title)</a>
