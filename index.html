@@ -1,458 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
   
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+  <meta name="generator" content="Hexo 6.0.0">
 
   
+
+  
+
+  
+    <meta name="author" content="John Doe">
+  
+
+  
+
+  
+
+  <title>Hexo</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
   
 <link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.0.0"></head>
-
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container">
+  
+    <div class="post-image" style="background-image: url(https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          Hexo
+        
+      </a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-博客搭建" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="article-date">
-  <time class="dt-published" datetime="2022-01-12T09:36:18.069Z" itemprop="datePublished">2022-01-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="如何搭建博客"><a href="#如何搭建博客" class="headerlink" title="如何搭建博客"></a>如何搭建博客</h1><p>环境搭建：</p>
-<p>1、node环境下载</p>
-<p>2、git下载</p>
-<p>3、Hexo下载</p>
-<hr>
-<h3 id="1、将本地仓库与远程仓库连接"><a href="#1、将本地仓库与远程仓库连接" class="headerlink" title="1、将本地仓库与远程仓库连接"></a>1、将本地仓库与远程仓库连接</h3><p>1、创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。</p>
-<p>2、配置用户名和邮箱 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;xxxx&quot;</span><br><span class="line">git config --global user.email &quot;xxxx&quot;</span><br></pre></td></tr></table></figure>
-
-<p>配置成功后会在C盘下生成</p>
-<p><img src="../imag/image-20220113144617824.png" alt="image-20220113144617824"></p>
-<p>3、生成ssh添加到github </p>
-<p>在C:\Users\86183.ssh下使用git bash here</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;xxxxxxx@qq.com&quot; -f &quot;github_id_rsa&quot;</span><br></pre></td></tr></table></figure>
-
-<p>将生成的github_id_rsa.pub文件中数据复制到<a target="_blank" rel="noopener" href="https://github.com/settings/keys">https://github.com/settings/keys</a></p>
-<p>然后进行测试是否连接成功，使用git bash</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-
-
-<p>测试成功后会在C:\Users\86183.ssh下生成</p>
-<p><img src="../imag/image-20220113144528480.png" alt="image-20220113144528480"></p>
-<h5 id="Git使用出现-103-x69-x74-x40-x67-105-x74-104-x75-x62-46-99-111-109-Permission-denied-publickey-处理"><a href="#Git使用出现-103-x69-x74-x40-x67-105-x74-104-x75-x62-46-99-111-109-Permission-denied-publickey-处理" class="headerlink" title="Git使用出现&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;: Permission denied (publickey). 处理"></a>Git使用出现<a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;">&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;</a>: Permission denied (publickey). 处理</h5><p>$ ssh-add ~/.ssh/id_rsa 出现Could not open a connection to your authentication agent. 这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name</p>
-<hr>
-<h3 id="2、下载hexo"><a href="#2、下载hexo" class="headerlink" title="2、下载hexo"></a>2、下载hexo</h3><p>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后<code>cd</code>到这个文件夹下</p>
-<p>输入命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>依旧用<code>hexo -v</code>查看一下版本</p>
-<p>至此就全部安装完了。</p>
-<p>切换到指定文件下，初始化hexo，管理员身份运行cmd</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p>新建完成后，指定文件夹目录下有：</p>
-<ul>
-<li>node_modules: 依赖包</li>
-<li>public：存放生成的页面</li>
-<li>scaffolds：生成文章的一些模板</li>
-<li>source：用来存放你的文章</li>
-<li>themes：主题</li>
-<li>** _config.yml: 博客的配置文件**</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>
-<p>ctrl+c关闭服务</p>
-<hr>
-<h3 id="3、将hexo部署到github上"><a href="#3、将hexo部署到github上" class="headerlink" title="3、将hexo部署到github上"></a>3、将hexo部署到github上</h3><p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为<br>xxxxx就是你的GitHub账户</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/xxxx/xxxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="4、发布文章"><a href="#4、发布文章" class="headerlink" title="4、发布文章"></a>4、发布文章</h3><p>直接在source下_posts新建md文件即可，重复上述步骤</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ckycmcpry0001zsk93pdsh22j" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-bom接口文档" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/12/bom%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/" class="article-date">
-  <time class="dt-published" datetime="2022-01-12T07:28:03.867Z" itemprop="datePublished">2022-01-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>bom需求文档</p>
-<h3 id="1、项目相关接口"><a href="#1、项目相关接口" class="headerlink" title="1、项目相关接口"></a>1、项目相关接口</h3><p> url：/api_bom/project</p>
-<h4 id="查询所有项目"><a href="#查询所有项目" class="headerlink" title="查询所有项目"></a>查询所有项目</h4><p>url:/api_bom/project/selectAllProject</p>
-<p>请求方式：GET</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>pageSize</td>
-<td>int</td>
-<td>页面大小</td>
-</tr>
-<tr>
-<td>pageNum</td>
-<td>int</td>
-<td>页面数</td>
-</tr>
-</tbody></table>
-<p>返回示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 20000,</span><br><span class="line">    &quot;message&quot;: &quot;success&quot;,</span><br><span class="line">    &quot;data&quot;: &#123;</span><br><span class="line">        &quot;totalCount&quot;: 7,</span><br><span class="line">        &quot;totalPages&quot;: 2,</span><br><span class="line">        &quot;currentPage&quot;: 1,</span><br><span class="line">        &quot;list&quot;: [</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 1,</span><br><span class="line">                &quot;projectNo&quot;: &quot;001&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;项目1&quot;,</span><br><span class="line">                &quot;cas&quot;: &quot;ty112&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 10001,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:16:07&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:16:09&quot;,</span><br><span class="line">                &quot;projectTechnologyList&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 2,</span><br><span class="line">                &quot;projectNo&quot;: &quot;002&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;项目2&quot;,</span><br><span class="line">                &quot;cas&quot;: &quot;ooss11&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 10002,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-27 11:56:11&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-27 11:56:14&quot;,</span><br><span class="line">                &quot;projectTechnologyList&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 4,</span><br><span class="line">                &quot;projectNo&quot;: &quot;003&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;项目3&quot;,</span><br><span class="line">                &quot;cas&quot;: &quot;qux112&quot;,</span><br><span class="line">                &quot;remark&quot;: &quot;1&quot;,</span><br><span class="line">                &quot;employeeId&quot;: 10003,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:17:36&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:17:38&quot;,</span><br><span class="line">                &quot;projectTechnologyList&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 5,</span><br><span class="line">                &quot;projectNo&quot;: &quot;003&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;项目4&quot;,</span><br><span class="line">                &quot;cas&quot;: &quot;qux112&quot;,</span><br><span class="line">                &quot;remark&quot;: &quot;1&quot;,</span><br><span class="line">                &quot;employeeId&quot;: 10003,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:17:36&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:17:38&quot;,</span><br><span class="line">                &quot;projectTechnologyList&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 6,</span><br><span class="line">                &quot;projectNo&quot;: &quot;006&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;项目5&quot;,</span><br><span class="line">                &quot;cas&quot;: &quot;qwesa&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 10006,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2022-01-05 17:47:17&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2022-01-05 17:47:20&quot;,</span><br><span class="line">                &quot;projectTechnologyList&quot;: null</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="根据项目id查看项目相关的工艺"><a href="#根据项目id查看项目相关的工艺" class="headerlink" title="根据项目id查看项目相关的工艺"></a>根据项目id查看项目相关的工艺</h4><p>url:/api_bom/project/selectAllTechnology</p>
-<p>请求方式：GET</p>
-<p>参数：</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>id</td>
-<td>int</td>
-<td>项目id</td>
-</tr>
-</tbody></table>
-<p>返回示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 20000,</span><br><span class="line">    &quot;message&quot;: &quot;success&quot;,</span><br><span class="line">    &quot;data&quot;: &#123;</span><br><span class="line">        &quot;totalCount&quot;: 5,</span><br><span class="line">        &quot;totalPages&quot;: 1,</span><br><span class="line">        &quot;currentPage&quot;: 1,</span><br><span class="line">        &quot;list&quot;: [</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 1,</span><br><span class="line">                &quot;projectId&quot;: &quot;1&quot;,</span><br><span class="line">                &quot;technologyId&quot;: 1,</span><br><span class="line">                &quot;remark&quot;: &quot;1&quot;,</span><br><span class="line">                &quot;step&quot;: 1,</span><br><span class="line">                &quot;employeeId&quot;: 10001,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2022-01-10 10:20:31&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2022-01-10 10:20:34&quot;,</span><br><span class="line">                &quot;technologies&quot;: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        &quot;id&quot;: 1,</span><br><span class="line">                        &quot;technologyNo&quot;: &quot;YH11101&quot;,</span><br><span class="line">                        &quot;name&quot;: &quot;工艺1&quot;,</span><br><span class="line">                        &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">                        &quot;remark&quot;: null,</span><br><span class="line">                        &quot;employeeId&quot;: 10001,</span><br><span class="line">                        &quot;createdAt&quot;: &quot;2021-12-24 10:18:38&quot;,</span><br><span class="line">                        &quot;updatedAt&quot;: &quot;2021-12-24 10:18:40&quot;,</span><br><span class="line">                        &quot;boms&quot;: null</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 2,</span><br><span class="line">                &quot;projectId&quot;: &quot;1&quot;,</span><br><span class="line">                &quot;technologyId&quot;: 2,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;step&quot;: 2,</span><br><span class="line">                &quot;employeeId&quot;: 10002,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2022-01-10 10:20:49&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2022-01-10 10:20:51&quot;,</span><br><span class="line">                &quot;technologies&quot;: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        &quot;id&quot;: 2,</span><br><span class="line">                        &quot;technologyNo&quot;: &quot;YGOO001&quot;,</span><br><span class="line">                        &quot;name&quot;: &quot;工艺2&quot;,</span><br><span class="line">                        &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">                        &quot;remark&quot;: null,</span><br><span class="line">                        &quot;employeeId&quot;: 10002,</span><br><span class="line">                        &quot;createdAt&quot;: &quot;2021-12-24 10:19:54&quot;,</span><br><span class="line">                        &quot;updatedAt&quot;: &quot;2021-12-24 10:19:56&quot;,</span><br><span class="line">                        &quot;boms&quot;: null</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 5,</span><br><span class="line">                &quot;projectId&quot;: &quot;1&quot;,</span><br><span class="line">                &quot;technologyId&quot;: 5,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;step&quot;: 3,</span><br><span class="line">                &quot;employeeId&quot;: 10002,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2022-01-10 10:21:43&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2022-01-10 10:21:42&quot;,</span><br><span class="line">                &quot;technologies&quot;: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        &quot;id&quot;: 5,</span><br><span class="line">                        &quot;technologyNo&quot;: &quot;zxss&quot;,</span><br><span class="line">                        &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">                        &quot;careItem&quot;: null,</span><br><span class="line">                        &quot;remark&quot;: null,</span><br><span class="line">                        &quot;employeeId&quot;: 10009,</span><br><span class="line">                        &quot;createdAt&quot;: &quot;2022-01-10 10:33:38&quot;,</span><br><span class="line">                        &quot;updatedAt&quot;: &quot;2022-01-10 10:33:40&quot;,</span><br><span class="line">                        &quot;boms&quot;: null</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 4,</span><br><span class="line">                &quot;projectId&quot;: &quot;1&quot;,</span><br><span class="line">                &quot;technologyId&quot;: 4,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;step&quot;: 4,</span><br><span class="line">                &quot;employeeId&quot;: 10004,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2022-01-10 10:21:19&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2022-01-10 10:21:21&quot;,</span><br><span class="line">                &quot;technologies&quot;: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        &quot;id&quot;: 4,</span><br><span class="line">                        &quot;technologyNo&quot;: &quot;asd&quot;,</span><br><span class="line">                        &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">                        &quot;careItem&quot;: null,</span><br><span class="line">                        &quot;remark&quot;: null,</span><br><span class="line">                        &quot;employeeId&quot;: 11321,</span><br><span class="line">                        &quot;createdAt&quot;: &quot;2022-01-10 10:32:38&quot;,</span><br><span class="line">                        &quot;updatedAt&quot;: &quot;2022-01-10 10:32:40&quot;,</span><br><span class="line">                        &quot;boms&quot;: null</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 3,</span><br><span class="line">                &quot;projectId&quot;: &quot;1&quot;,</span><br><span class="line">                &quot;technologyId&quot;: 3,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;step&quot;: 5,</span><br><span class="line">                &quot;employeeId&quot;: 10004,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2022-01-10 10:21:04&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2022-01-10 10:21:06&quot;,</span><br><span class="line">                &quot;technologies&quot;: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        &quot;id&quot;: 3,</span><br><span class="line">                        &quot;technologyNo&quot;: &quot;HH1001&quot;,</span><br><span class="line">                        &quot;name&quot;: &quot;工艺3&quot;,</span><br><span class="line">                        &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">                        &quot;remark&quot;: null,</span><br><span class="line">                        &quot;employeeId&quot;: 10003,</span><br><span class="line">                        &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">                        &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;,</span><br><span class="line">                        &quot;boms&quot;: null</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="根据项目id查询所有的相关物料"><a href="#根据项目id查询所有的相关物料" class="headerlink" title="根据项目id查询所有的相关物料"></a>根据项目id查询所有的相关物料</h4><p>url：/api_bom/project/selectBomsByIdWithStep</p>
-<p>请求方式：GET</p>
-<p>参数：</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>id</td>
-<td>int</td>
-<td>项目id</td>
-</tr>
-</tbody></table>
-<p>返回示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 20000,</span><br><span class="line">    &quot;message&quot;: &quot;success&quot;,</span><br><span class="line">    &quot;data&quot;: &#123;</span><br><span class="line">        &quot;totalCount&quot;: 5,</span><br><span class="line">        &quot;totalPages&quot;: 1,</span><br><span class="line">        &quot;currentPage&quot;: 1,</span><br><span class="line">        &quot;list&quot;: [</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 0,</span><br><span class="line">                &quot;technologyId&quot;: 0,</span><br><span class="line">                &quot;bomId&quot;: 0,</span><br><span class="line">                &quot;unit&quot;: &quot;ml&quot;,</span><br><span class="line">                &quot;packAge&quot;: 1,</span><br><span class="line">                &quot;createdAt&quot;: null,</span><br><span class="line">                &quot;updatedAt&quot;: null,</span><br><span class="line">                &quot;technologies&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;technologyNo&quot;: null,</span><br><span class="line">                    &quot;name&quot;: &quot;工艺1&quot;,</span><br><span class="line">                    &quot;careItem&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null,</span><br><span class="line">                    &quot;boms&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;boms&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;name&quot;: &quot;物料1&quot;,</span><br><span class="line">                    &quot;category&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;projectTechnology&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;projectId&quot;: null,</span><br><span class="line">                    &quot;technologyId&quot;: 0,</span><br><span class="line">                    &quot;remark&quot;: &quot;1&quot;,</span><br><span class="line">                    &quot;step&quot;: 1,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null,</span><br><span class="line">                    &quot;technologies&quot;: null</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 0,</span><br><span class="line">                &quot;technologyId&quot;: 0,</span><br><span class="line">                &quot;bomId&quot;: 0,</span><br><span class="line">                &quot;unit&quot;: &quot;ml&quot;,</span><br><span class="line">                &quot;packAge&quot;: 1,</span><br><span class="line">                &quot;createdAt&quot;: null,</span><br><span class="line">                &quot;updatedAt&quot;: null,</span><br><span class="line">                &quot;technologies&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;technologyNo&quot;: null,</span><br><span class="line">                    &quot;name&quot;: &quot;工艺2&quot;,</span><br><span class="line">                    &quot;careItem&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null,</span><br><span class="line">                    &quot;boms&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;boms&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;name&quot;: &quot;物料2&quot;,</span><br><span class="line">                    &quot;category&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;projectTechnology&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;projectId&quot;: null,</span><br><span class="line">                    &quot;technologyId&quot;: 0,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;step&quot;: 2,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null,</span><br><span class="line">                    &quot;technologies&quot;: null</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 0,</span><br><span class="line">                &quot;technologyId&quot;: 0,</span><br><span class="line">                &quot;bomId&quot;: 0,</span><br><span class="line">                &quot;unit&quot;: &quot;g&quot;,</span><br><span class="line">                &quot;packAge&quot;: 1,</span><br><span class="line">                &quot;createdAt&quot;: null,</span><br><span class="line">                &quot;updatedAt&quot;: null,</span><br><span class="line">                &quot;technologies&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;technologyNo&quot;: null,</span><br><span class="line">                    &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">                    &quot;careItem&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null,</span><br><span class="line">                    &quot;boms&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;boms&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;name&quot;: &quot;物料4&quot;,</span><br><span class="line">                    &quot;category&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;projectTechnology&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;projectId&quot;: null,</span><br><span class="line">                    &quot;technologyId&quot;: 0,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;step&quot;: 3,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null,</span><br><span class="line">                    &quot;technologies&quot;: null</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 0,</span><br><span class="line">                &quot;technologyId&quot;: 0,</span><br><span class="line">                &quot;bomId&quot;: 0,</span><br><span class="line">                &quot;unit&quot;: &quot;kg&quot;,</span><br><span class="line">                &quot;packAge&quot;: 1,</span><br><span class="line">                &quot;createdAt&quot;: null,</span><br><span class="line">                &quot;updatedAt&quot;: null,</span><br><span class="line">                &quot;technologies&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;technologyNo&quot;: null,</span><br><span class="line">                    &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">                    &quot;careItem&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null,</span><br><span class="line">                    &quot;boms&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;boms&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;name&quot;: &quot;物料3&quot;,</span><br><span class="line">                    &quot;category&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;projectTechnology&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;projectId&quot;: null,</span><br><span class="line">                    &quot;technologyId&quot;: 0,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;step&quot;: 4,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null,</span><br><span class="line">                    &quot;technologies&quot;: null</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 0,</span><br><span class="line">                &quot;technologyId&quot;: 0,</span><br><span class="line">                &quot;bomId&quot;: 0,</span><br><span class="line">                &quot;unit&quot;: &quot;ml&quot;,</span><br><span class="line">                &quot;packAge&quot;: 1,</span><br><span class="line">                &quot;createdAt&quot;: null,</span><br><span class="line">                &quot;updatedAt&quot;: null,</span><br><span class="line">                &quot;technologies&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;technologyNo&quot;: null,</span><br><span class="line">                    &quot;name&quot;: &quot;工艺3&quot;,</span><br><span class="line">                    &quot;careItem&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null,</span><br><span class="line">                    &quot;boms&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;boms&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;name&quot;: &quot;物料3&quot;,</span><br><span class="line">                    &quot;category&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;projectTechnology&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;projectId&quot;: null,</span><br><span class="line">                    &quot;technologyId&quot;: 0,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;step&quot;: 5,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null,</span><br><span class="line">                    &quot;technologies&quot;: null</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="新增项目及其相关的工艺流程"><a href="#新增项目及其相关的工艺流程" class="headerlink" title="新增项目及其相关的工艺流程"></a>新增项目及其相关的工艺流程</h4><p>url：/api_bom/project/insertNew</p>
-<p>请求方式：GET</p>
-<p>参数：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;project&quot;:&#123;</span><br><span class="line">    &quot;projectNo&quot;: &quot;008&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;项目7&quot;,</span><br><span class="line">    &quot;cas&quot;:&quot;xxxx111&quot;,</span><br><span class="line">    &quot;remark&quot;: null,</span><br><span class="line">    &quot;employeeId&quot;: 10003,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;list&quot;:[</span><br><span class="line">    &#123;</span><br><span class="line">    &quot;technologyId&quot;:&quot;10&quot;,</span><br><span class="line">    &quot;remark&quot;: null,</span><br><span class="line">    &quot;step&quot;:1,</span><br><span class="line">    &quot;employeeId&quot;:10003,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">       &#123;</span><br><span class="line">    &quot;technologyId&quot;:&quot;11&quot;,</span><br><span class="line">    &quot;remark&quot;: null,</span><br><span class="line">    &quot;step&quot;:2,</span><br><span class="line">    &quot;employeeId&quot;:10003,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    ] </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>返回示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 20000,</span><br><span class="line">    &quot;message&quot;: &quot;success&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="2、工艺相关接口"><a href="#2、工艺相关接口" class="headerlink" title="2、工艺相关接口"></a>2、工艺相关接口</h3><p>url：/api_bom/technology</p>
-<h4 id="查询所有工艺"><a href="#查询所有工艺" class="headerlink" title="查询所有工艺"></a>查询所有工艺</h4><p>url:/api_bom/technology/selectByPage</p>
-<p>请求方式：GET</p>
-<p>返回示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 20000,</span><br><span class="line">    &quot;message&quot;: &quot;success&quot;,</span><br><span class="line">    &quot;data&quot;: &#123;</span><br><span class="line">        &quot;totalCount&quot;: 17,</span><br><span class="line">        &quot;totalPages&quot;: 2,</span><br><span class="line">        &quot;currentPage&quot;: 1,</span><br><span class="line">        &quot;list&quot;: [</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 1,</span><br><span class="line">                &quot;technologyNo&quot;: &quot;YH11101&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;工艺1&quot;,</span><br><span class="line">                &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 0,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:18:38&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:18:40&quot;,</span><br><span class="line">                &quot;boms&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 2,</span><br><span class="line">                &quot;technologyNo&quot;: &quot;YGOO001&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;工艺2&quot;,</span><br><span class="line">                &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 0,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:19:54&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:19:56&quot;,</span><br><span class="line">                &quot;boms&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 3,</span><br><span class="line">                &quot;technologyNo&quot;: &quot;HH1001&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;工艺3&quot;,</span><br><span class="line">                &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 0,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;,</span><br><span class="line">                &quot;boms&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 4,</span><br><span class="line">                &quot;technologyNo&quot;: &quot;asd&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">                &quot;careItem&quot;: null,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 0,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2022-01-10 10:32:38&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2022-01-10 10:32:40&quot;,</span><br><span class="line">                &quot;boms&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 5,</span><br><span class="line">                &quot;technologyNo&quot;: &quot;zxss&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">                &quot;careItem&quot;: null,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 0,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2022-01-10 10:33:38&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2022-01-10 10:33:40&quot;,</span><br><span class="line">                &quot;boms&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 13,</span><br><span class="line">                &quot;technologyNo&quot;: &quot;war21&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;工艺5&quot;,</span><br><span class="line">                &quot;careItem&quot;: &quot;&quot;,</span><br><span class="line">                &quot;remark&quot;: &quot;&quot;,</span><br><span class="line">                &quot;employeeId&quot;: 0,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">                &quot;boms&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 14,</span><br><span class="line">                &quot;technologyNo&quot;: &quot;nm&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">                &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 0,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;,</span><br><span class="line">                &quot;boms&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 15,</span><br><span class="line">                &quot;technologyNo&quot;: &quot;nm&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">                &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 0,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;,</span><br><span class="line">                &quot;boms&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 16,</span><br><span class="line">                &quot;technologyNo&quot;: &quot;nm&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">                &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 0,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;,</span><br><span class="line">                &quot;boms&quot;: null</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 17,</span><br><span class="line">                &quot;technologyNo&quot;: &quot;nm&quot;,</span><br><span class="line">                &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">                &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 0,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;,</span><br><span class="line">                &quot;boms&quot;: null</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="查询工艺相关的物料"><a href="#查询工艺相关的物料" class="headerlink" title="查询工艺相关的物料"></a>查询工艺相关的物料</h4><p>url：/api_bom/technology/selectBom</p>
-<p>请求方式：GET</p>
-<p>参数：</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>id</td>
-<td>int</td>
-<td>工艺id</td>
-</tr>
-<tr>
-<td>pageSize</td>
-<td>int</td>
-<td>页面大小</td>
-</tr>
-<tr>
-<td>pageNum</td>
-<td>int</td>
-<td>页面数</td>
-</tr>
-</tbody></table>
-<p>返回示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 20000,</span><br><span class="line">    &quot;message&quot;: &quot;success&quot;,</span><br><span class="line">    &quot;data&quot;: &#123;</span><br><span class="line">        &quot;totalCount&quot;: 1,</span><br><span class="line">        &quot;totalPages&quot;: 1,</span><br><span class="line">        &quot;currentPage&quot;: 1,</span><br><span class="line">        &quot;list&quot;: [</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 2,</span><br><span class="line">                &quot;technologyId&quot;: 2,</span><br><span class="line">                &quot;bomId&quot;: 2,</span><br><span class="line">                &quot;unit&quot;: &quot;ml&quot;,</span><br><span class="line">                &quot;packAge&quot;: 1,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2022-01-10 10:22:24&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2022-01-10 10:22:26&quot;,</span><br><span class="line">                &quot;technologies&quot;: null,</span><br><span class="line">                &quot;boms&quot;: &#123;</span><br><span class="line">                    &quot;id&quot;: 0,</span><br><span class="line">                    &quot;name&quot;: &quot;物料2&quot;,</span><br><span class="line">                    &quot;category&quot;: null,</span><br><span class="line">                    &quot;remark&quot;: null,</span><br><span class="line">                    &quot;employeeId&quot;: 0,</span><br><span class="line">                    &quot;createdAt&quot;: null,</span><br><span class="line">                    &quot;updatedAt&quot;: null</span><br><span class="line">                &#125;,</span><br><span class="line">                &quot;projectTechnology&quot;: null</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="新增工艺及其相关物料"><a href="#新增工艺及其相关物料" class="headerlink" title="新增工艺及其相关物料"></a>新增工艺及其相关物料</h4><p>url：/api_bom/technology/insertTechnologyWithBom</p>
-<p>请求方式：GET</p>
-<p>参数示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    &quot;technologies&quot;:</span><br><span class="line">    &#123;</span><br><span class="line">    &quot;technologyNo&quot;: &quot;yxh123&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;基础工艺&quot;,</span><br><span class="line">    &quot;careItem&quot;: &quot;无&quot;,</span><br><span class="line">    &quot;remark&quot;: null,</span><br><span class="line">    &quot;employeeId&quot;: 10003,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;list&quot;:[</span><br><span class="line">    &#123;</span><br><span class="line">    &quot;bomId&quot;:1,</span><br><span class="line">    &quot;unit&quot;:&quot;ml&quot;,</span><br><span class="line">    &quot;packAge&quot;:500,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">       &#123;</span><br><span class="line">    &quot;bomId&quot;:2,</span><br><span class="line">    &quot;unit&quot;:&quot;ml&quot;,</span><br><span class="line">    &quot;packAge&quot;:500,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2021-12-24 10:21:38&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2021-12-24 10:21:40&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    ] </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<p>返回示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 20000,</span><br><span class="line">    &quot;message&quot;: &quot;success&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="3、物料相关接口"><a href="#3、物料相关接口" class="headerlink" title="3、物料相关接口"></a>3、物料相关接口</h3><p>url：/api_bom/boms</p>
-<h4 id="查询所有物料"><a href="#查询所有物料" class="headerlink" title="查询所有物料"></a>查询所有物料</h4><p>url：/api_bom/boms/selectByPage</p>
-<p>请求方式:GET</p>
-<p>返回示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">	&#123;</span><br><span class="line">    &quot;code&quot;: 20000,</span><br><span class="line">    &quot;message&quot;: &quot;success&quot;,</span><br><span class="line">    &quot;data&quot;: &#123;</span><br><span class="line">        &quot;totalCount&quot;: 12,</span><br><span class="line">        &quot;totalPages&quot;: 4,</span><br><span class="line">        &quot;currentPage&quot;: 1,</span><br><span class="line">        &quot;list&quot;: [</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 1,</span><br><span class="line">                &quot;name&quot;: &quot;物料1&quot;,</span><br><span class="line">                &quot;category&quot;: &quot;材料&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 123,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-23 15:54:54&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-24 15:54:57&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 2,</span><br><span class="line">                &quot;name&quot;: &quot;物料2&quot;,</span><br><span class="line">                &quot;category&quot;: &quot;材料&quot;,</span><br><span class="line">                &quot;remark&quot;: &quot;&quot;,</span><br><span class="line">                &quot;employeeId&quot;: 1234,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2021-12-23 17:03:38&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2021-12-23 17:03:38&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;id&quot;: 3,</span><br><span class="line">                &quot;name&quot;: &quot;物料3&quot;,</span><br><span class="line">                &quot;category&quot;: &quot;材料&quot;,</span><br><span class="line">                &quot;remark&quot;: null,</span><br><span class="line">                &quot;employeeId&quot;: 1,</span><br><span class="line">                &quot;createdAt&quot;: &quot;2022-01-10 10:34:26&quot;,</span><br><span class="line">                &quot;updatedAt&quot;: &quot;2022-01-10 10:34:27&quot;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/12/bom%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/" data-id="ckycmcps40002zsk9fssghp4k" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/12/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-01-12T05:13:17.918Z" itemprop="datePublished">2022-01-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+      <ul class="navbar-list">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/12/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/12/hello-world/" data-id="ckycmcprm0000zsk9cppj1j75" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
+          <li class="navbar-list-item"><a href="/">首页</a></li>
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+          <li class="navbar-list-item"><a href="/links">友链</a></li>
         
-          <li>
-            <a href="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/12/bom%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/12/hello-world/">Hello World</a>
-          </li>
+          <li class="navbar-list-item"><a href="/about">关于</a></li>
         
       </ul>
     </div>
   </div>
+</nav>
 
   
-</aside>
+  
+    <div class="header-content">
+      <div class="post-text layout-block layout-padding">
+        <h1 class="title-wrap">Hexo</h1>
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
-  </div>
-</footer>
+  
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+</header>
+
+    <!-- 首页 -->
+
+<!-- post list container -->
+<div class="body-container">
+  <div class="content-container layout-block article-list">
+    
+      <div class="article-item layout-padding">
+        <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+          
+
+          <div class="card-text">
+            
+              <a href="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url">
+                <h2 class="card-text--title">搭建博客</h2>
+              </a>
+            
+            <div class="card-text--row">
+              <span>发布于</span>
+              <time  class="" datetime="2022-01-12T09:36:18.069Z" itemprop="datePublished">2022-01-12</time>
+            </div>
+            <ul class="wrap-list light">
+  
+</ul>
+            <ul class="wrap-list light">
+  
+</ul>
+          </div>
+        </article>
+      </div>
+    
+      <div class="article-item layout-padding">
+        <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+          
+
+          <div class="card-text">
+            
+              <a href="/2022/01/12/bom%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/" itemprop="url">
+                <h2 class="card-text--title">bom需求文档</h2>
+              </a>
+            
+            <div class="card-text--row">
+              <span>发布于</span>
+              <time  class="" datetime="2022-01-12T07:28:03.867Z" itemprop="datePublished">2022-01-12</time>
+            </div>
+            <ul class="wrap-list light">
+  
+</ul>
+            <ul class="wrap-list light">
+  
+</ul>
+          </div>
+        </article>
+      </div>
+    
+      <div class="article-item layout-padding">
+        <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+          
+
+          <div class="card-text">
+            
+              <a href="/2022/01/12/hello-world/" itemprop="url">
+                <h2 class="card-text--title">Hello World</h2>
+              </a>
+            
+            <div class="card-text--row">
+              <span>发布于</span>
+              <time  class="" datetime="2022-01-12T05:13:17.918Z" itemprop="datePublished">2022-01-12</time>
+            </div>
+            <ul class="wrap-list light">
+  
+</ul>
+            <ul class="wrap-list light">
+  
+</ul>
+          </div>
+        </article>
+      </div>
+    
+  </div>
+</div>
+
+<!-- page container -->
+
+
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/miiiku/" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+          <a href="https://twitter.com/guanquanhong" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-twitter" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M962.285714 233.142857q-38.285714 56-92.571429 95.428571 0.571429 8 0.571429 24 0 74.285714-21.714286 148.285714t-66 142-105.428571 120.285714-147.428571 83.428571-184.571429 31.142857q-154.857143 0-283.428571-82.857143 20 2.285714 44.571429 2.285714 128.571429 0 229.142857-78.857143-60-1.142857-107.428571-36.857143t-65.142857-91.142857q18.857143 2.857143 34.857143 2.857143 24.571429 0 48.571429-6.285714-64-13.142857-106-63.714286t-42-117.428571l0-2.285714q38.857143 21.714286 83.428571 23.428571-37.714286-25.142857-60-65.714286t-22.285714-88q0-50.285714 25.142857-93.142857 69.142857 85.142857 168.285714 136.285714t212.285714 56.857143q-4.571429-21.714286-4.571429-42.285714 0-76.571429 54-130.571429t130.571429-54q80 0 134.857143 58.285714 62.285714-12 117.142857-44.571429-21.142857 65.714286-81.142857 101.714286 53.142857-5.714286 106.285714-28.571429z"></path>
+</svg>
+          </a>
+        
+      
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+     
+    <p>&copy; 2022 <a href="/" target="_blank">John Doe</a></p>
+
     
 
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+  
+
+
+  
 
 
 
@@ -460,9 +267,7 @@
 <script src="/js/script.js"></script>
 
 
-
-
-
-  </div>
+  
+  <!-- 尾部用户自定义相关内容 -->
 </body>
 </html>
