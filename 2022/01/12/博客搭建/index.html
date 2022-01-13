@@ -13,16 +13,13 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="如何搭建博客环境搭建： 1、node环境下载 2、git下载 3、Hexo下载  1、将本地仓库与远程仓库连接1、创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。 2、配置用户名和邮箱  12git config --global user.nam">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://github.com/qxxq668/qxxq668.github.io/tree/master/QQ%E6%88%AA%E5%9B%BE20220112175653.png">
-<meta property="og:image" content="https://github.com/qxxq668/qxxq668.github.io/tree/master/image-20220112172231033.png">
-<meta property="og:image" content="https://github.com/qxxq668/qxxq668.github.io/tree/master/image-20220112172332887.png">
-<meta property="og:image" content="https://github.com/qxxq668/qxxq668.github.io/tree/master/image-20220112173209497.png">
-<meta property="og:image" content="https://github.com/qxxq668/qxxq668.github.io/tree/master/image-20220112173511924.png">
+<meta property="og:image" content="http://example.com/2022/01/12/imag/image-20220113144617824.png">
+<meta property="og:image" content="http://example.com/2022/01/12/imag/image-20220113144528480.png">
 <meta property="article:published_time" content="2022-01-12T09:36:18.069Z">
-<meta property="article:modified_time" content="2022-01-12T10:05:13.157Z">
+<meta property="article:modified_time" content="2022-01-13T06:55:45.212Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/qxxq668/qxxq668.github.io/tree/master/QQ%E6%88%AA%E5%9B%BE20220112175653.png">
+<meta name="twitter:image" content="http://example.com/2022/01/12/imag/image-20220113144617824.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -101,8 +98,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;xxxx&quot;</span><br><span class="line">git config --global user.email &quot;xxxx&quot;</span><br></pre></td></tr></table></figure>
 
 <p>配置成功后会在C盘下生成</p>
-<p><img src="https://github.com/qxxq668/qxxq668.github.io/tree/master/QQ%E6%88%AA%E5%9B%BE20220112175653.png" alt="QQ截图20220112175653"></p>
-<p>()</p>
+<p><img src="../imag/image-20220113144617824.png" alt="image-20220113144617824"></p>
 <p>3、生成ssh添加到github </p>
 <p>在C:\Users\86183.ssh下使用git bash here</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;xxxxxxx@qq.com&quot; -f &quot;github_id_rsa&quot;</span><br></pre></td></tr></table></figure>
@@ -111,10 +107,11 @@
 <p>然后进行测试是否连接成功，使用git bash</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://github.com/qxxq668/qxxq668.github.io/tree/master/image-20220112172231033.png" alt="image-20220112172231033"></p>
+
+
 <p>测试成功后会在C:\Users\86183.ssh下生成</p>
-<p><img src="https://github.com/qxxq668/qxxq668.github.io/tree/master/image-20220112172332887.png" alt="image-20220112172332887"></p>
-<h5 id="Git使用出现-x67-x69-116-x40-x67-x69-x74-x68-117-x62-46-x63-111-x6d-Permission-denied-publickey-处理"><a href="#Git使用出现-x67-x69-116-x40-x67-x69-x74-x68-117-x62-46-x63-111-x6d-Permission-denied-publickey-处理" class="headerlink" title="Git使用出现&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;: Permission denied (publickey). 处理"></a>Git使用出现<a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;">&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;</a>: Permission denied (publickey). 处理</h5><p>$ ssh-add ~/.ssh/id_rsa 出现Could not open a connection to your authentication agent. 这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name</p>
+<p><img src="../imag/image-20220113144528480.png" alt="image-20220113144528480"></p>
+<h5 id="Git使用出现-103-x69-x74-x40-x67-105-x74-104-x75-x62-46-99-111-109-Permission-denied-publickey-处理"><a href="#Git使用出现-103-x69-x74-x40-x67-105-x74-104-x75-x62-46-99-111-109-Permission-denied-publickey-处理" class="headerlink" title="Git使用出现&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;: Permission denied (publickey). 处理"></a>Git使用出现<a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;">&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;</a>: Permission denied (publickey). 处理</h5><p>$ ssh-add ~/.ssh/id_rsa 出现Could not open a connection to your authentication agent. 这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name</p>
 <hr>
 <h3 id="2、下载hexo"><a href="#2、下载hexo" class="headerlink" title="2、下载hexo"></a>2、下载hexo</h3><p>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后<code>cd</code>到这个文件夹下</p>
 <p>输入命令</p>
@@ -137,7 +134,6 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 
 <p>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>
-<p><img src="https://github.com/qxxq668/qxxq668.github.io/tree/master/image-20220112173209497.png" alt="image-20220112173209497"></p>
 <p>ctrl+c关闭服务</p>
 <hr>
 <h3 id="3、将hexo部署到github上"><a href="#3、将hexo部署到github上" class="headerlink" title="3、将hexo部署到github上"></a>3、将hexo部署到github上</h3><p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub</p>
@@ -146,13 +142,14 @@
 <p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为<br>xxxxx就是你的GitHub账户</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/xxxx/xxxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://github.com/qxxq668/qxxq668.github.io/tree/master/image-20220112173511924.png" alt="image-20220112173511924"></p>
+
+
 <h3 id="4、发布文章"><a href="#4、发布文章" class="headerlink" title="4、发布文章"></a>4、发布文章</h3><p>直接在source下_posts新建md文件即可，重复上述步骤</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ckybdapid0002hck9cw9q7u5u" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ckycmcpry0001zsk93pdsh22j" data-title="" class="article-share-link">Share</a>
       
       
       
