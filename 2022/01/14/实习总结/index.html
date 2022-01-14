@@ -22,7 +22,7 @@
 
   
 
-  <title>搭建博客 | Hexo</title>
+  <title>实习总结 | Hexo</title>
 
   
 
@@ -96,11 +96,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">搭建博客</h1>
+          <h1 class="title-wrap">实习总结</h1>
           <h2 class="title-sub-wrap">
             <strong>John Doe</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2022-01-12T09:36:18.069Z" itemprop="datePublished">2022-01-12</time>
+            <time  class="article-date" datetime="2022-01-14T06:14:15.591Z" itemprop="datePublished">2022-01-14</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -129,68 +129,22 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="如何搭建博客"><a href="#如何搭建博客" class="headerlink" title="如何搭建博客"></a>如何搭建博客</h1><p>环境搭建：</p>
-<p>1、node环境下载</p>
-<p>2、git下载</p>
-<p>3、Hexo下载</p>
-<hr>
-<h3 id="1、将本地仓库与远程仓库连接"><a href="#1、将本地仓库与远程仓库连接" class="headerlink" title="1、将本地仓库与远程仓库连接"></a>1、将本地仓库与远程仓库连接</h3><p>1、创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。</p>
-<p>2、配置用户名和邮箱 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;xxxx&quot;</span><br><span class="line">git config --global user.email &quot;xxxx&quot;</span><br></pre></td></tr></table></figure>
-
-<p>配置成功后会在C盘下生成</p>
-<p><img src="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/image-20220113144617824.png" alt="image-20220113144617824"></p>
-<p>3、生成ssh添加到github </p>
-<p>在C:\Users\86183.ssh下使用git bash here</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;xxxxxxx@qq.com&quot; -f &quot;github_id_rsa&quot;</span><br></pre></td></tr></table></figure>
-
-<p>将生成的github_id_rsa.pub文件中数据复制到<a target="_blank" rel="noopener" href="https://github.com/settings/keys">https://github.com/settings/keys</a></p>
-<p>然后进行测试是否连接成功，使用git bash</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-
-
-<p>测试成功后会在C:\Users\86183.ssh下生成</p>
-<p><img src="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/imag/image-20220113144528480.png" alt="image-20220113144528480"></p>
-<h5 id="Git使用出现-x67-105-x74-x40-x67-105-116-104-x75-98-x2e-99-x6f-x6d-Permission-denied-publickey-处理"><a href="#Git使用出现-x67-105-x74-x40-x67-105-116-104-x75-98-x2e-99-x6f-x6d-Permission-denied-publickey-处理" class="headerlink" title="Git使用出现&#x67;&#105;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;: Permission denied (publickey). 处理"></a>Git使用出现<a href="mailto:&#x67;&#105;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>: Permission denied (publickey). 处理</h5><p>$ ssh-add ~/.ssh/id_rsa 出现Could not open a connection to your authentication agent. 这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name</p>
-<hr>
-<h3 id="2、下载hexo"><a href="#2、下载hexo" class="headerlink" title="2、下载hexo"></a>2、下载hexo</h3><p>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后<code>cd</code>到这个文件夹下</p>
-<p>输入命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>依旧用<code>hexo -v</code>查看一下版本</p>
-<p>至此就全部安装完了。</p>
-<p>切换到指定文件下，初始化hexo，管理员身份运行cmd</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p>新建完成后，指定文件夹目录下有：</p>
-<ul>
-<li>node_modules: 依赖包</li>
-<li>public：存放生成的页面</li>
-<li>scaffolds：生成文章的一些模板</li>
-<li>source：用来存放你的文章</li>
-<li>themes：主题</li>
-<li>** _config.yml: 博客的配置文件**</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>
-<p>ctrl+c关闭服务</p>
-<hr>
-<h3 id="3、将hexo部署到github上"><a href="#3、将hexo部署到github上" class="headerlink" title="3、将hexo部署到github上"></a>3、将hexo部署到github上</h3><p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为<br>xxxxx就是你的GitHub账户</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/xxxx/xxxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="4、发布文章"><a href="#4、发布文章" class="headerlink" title="4、发布文章"></a>4、发布文章</h3><p>直接在source下_posts新建md文件即可，重复上述步骤</p>
-<p>问题：图片不显示问题</p>
-<p>1、在source文件夹下新建一个imag文件夹用以存储图片，同时修改默认插入typora的图片存储位置</p>
-<p><img src="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/imag/image-20220113150111325.png" alt="image-20220113150111325"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">例如：</span><br><span class="line">![img](../imag/xxx.png)</span><br></pre></td></tr></table></figure>
-
+        <p>时间：2021年12月15日~2022年1月14日</p>
+<p>光阴似箭，日月如梭。一个月的时间转眼就过去了，这期间经历了许多，收获了许多，也成长了许多。</p>
+<p>为何参加此次实习，原因有很多，也很简单。</p>
+<p>首先，我想要获得专业能力上面的成长，经过这一个月写代码，我认为我的代码水平有显著的提高，在刚开始学习编程语言，通常都是跟着网络上的学习视频敲代码，这样就会造成代码是敲出来了，但是自己根本没有理解这其中的道理，最后导致眼高手低。现在敲的代码都是通过了自己的思考而不是他人的思考，所以才能加深自己的理解。</p>
+<p>生活方面，我觉得在大学期间如果没有一次或多次的实习经历会留下许多的遗憾，而我希望能够丰富自己的人生经历，倘若按正常情况，放假回家，每天依旧乱糟糟的生活，那么就不会在人生的轨迹上留下任何值得回忆的事物。</p>
+<p>财务方面：每天的工作都能带来一定的收入，虽然不多，但也能饱腹。毕竟比起啃老，靠自己的双手挣来的更有意义。</p>
+<p>生活记录：</p>
+<p>在元旦之前，都是住宿在学校，而公司和学校之间的通勤时间将近两个小时。</p>
+<p>线路1：902公交-地铁2号线-地铁11号线</p>
+<p>每天6点20起床，买个包子或热干面，到上公交是6点55，经过一个小时准点到光谷广场坐地铁2号线，到武汉东站转11号线。晚上7点坐上公交，到宿舍差不多8点半。</p>
+<p>线路2：902-光谷有轨电车L2</p>
+<p>6点40起床，7点20坐上公交，7点55下公交，步行5分钟，电车8点过几分准时从起点发车，接近一个小时到神蹾三路</p>
+<p>线路3：758-2号线-11号线</p>
+<p>线路4：781-11号线</p>
+<p>线路5：732-光谷有轨电车L2 ·······</p>
+<p>公交的堵车时间，地铁的到站时间，电车的到站时间，一切都如同机器一般，分秒不差。</p>
 
       </section>
 
@@ -203,8 +157,8 @@
     
     <div class="card-text">
       
-        <a href="/2022/01/14/%E5%AE%9E%E4%B9%A0%E6%80%BB%E7%BB%93/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">实习总结</h2>
+        <a href="/2022/01/14/qusi/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">qusi</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -218,8 +172,8 @@
     
     <div class="card-text">
       
-        <a href="/2022/01/12/bom%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">bom需求文档</h2>
+        <a href="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">搭建博客</h2>
         </a>
       
       <div class="card-text--row">Older</div>
