@@ -22,7 +22,7 @@
 
   
 
-  <title>搭建博客 | Hexo</title>
+  <title>如何搭建博客 | Hexo</title>
 
   
 
@@ -96,11 +96,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">搭建博客</h1>
+          <h1 class="title-wrap">如何搭建博客</h1>
           <h2 class="title-sub-wrap">
             <strong>John Doe</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2022-01-12T09:36:18.069Z" itemprop="datePublished">2022-01-12</time>
+            <time  class="article-date" datetime="2022-01-14T08:10:24.000Z" itemprop="datePublished">2022-01-14</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -139,7 +139,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;xxxx&quot;</span><br><span class="line">git config --global user.email &quot;xxxx&quot;</span><br></pre></td></tr></table></figure>
 
 <p>配置成功后会在C盘下生成</p>
-<p><img src="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/image-20220113144617824.png" alt="image-20220113144617824"></p>
+<p><img src="/2022/01/14/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20220113144617824.png" alt="image-20220113144617824"></p>
 <p>3、生成ssh添加到github </p>
 <p>在C:\Users\86183.ssh下使用git bash here</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;xxxxxxx@qq.com&quot; -f &quot;github_id_rsa&quot;</span><br></pre></td></tr></table></figure>
@@ -151,8 +151,8 @@
 
 
 <p>测试成功后会在C:\Users\86183.ssh下生成</p>
-<p><img src="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/image-20220113144528480.png" alt="image-20220113144528480"></p>
-<h5 id="Git使用出现-x67-105-x74-64-x67-105-x74-x68-117-98-x2e-99-111-x6d-Permission-denied-publickey-处理"><a href="#Git使用出现-x67-105-x74-64-x67-105-x74-x68-117-98-x2e-99-111-x6d-Permission-denied-publickey-处理" class="headerlink" title="Git使用出现&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#x6d;: Permission denied (publickey). 处理"></a>Git使用出现<a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#x6d;</a>: Permission denied (publickey). 处理</h5><p>$ ssh-add ~/.ssh/id_rsa 出现Could not open a connection to your authentication agent. 这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name</p>
+<p><img src="/2022/01/14/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/imag/image-20220113144528480-1642147850707.png" alt="image-20220113144528480"></p>
+<h5 id="Git使用出现-x67-x69-x74-64-x67-x69-116-x68-117-x62-46-99-111-x6d-Permission-denied-publickey-处理"><a href="#Git使用出现-x67-x69-x74-64-x67-x69-116-x68-117-x62-46-99-111-x6d-Permission-denied-publickey-处理" class="headerlink" title="Git使用出现&#x67;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#99;&#111;&#x6d;: Permission denied (publickey). 处理"></a>Git使用出现<a href="mailto:&#x67;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#99;&#111;&#x6d;">&#x67;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#99;&#111;&#x6d;</a>: Permission denied (publickey). 处理</h5><p>$ ssh-add ~/.ssh/id_rsa 出现Could not open a connection to your authentication agent. 这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name</p>
 <hr>
 <h3 id="2、下载hexo"><a href="#2、下载hexo" class="headerlink" title="2、下载hexo"></a>2、下载hexo</h3><p>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后<code>cd</code>到这个文件夹下</p>
 <p>输入命令</p>
@@ -188,8 +188,8 @@
 <h3 id="4、发布文章"><a href="#4、发布文章" class="headerlink" title="4、发布文章"></a>4、发布文章</h3><p>直接在source下_posts新建md文件即可，重复上述步骤</p>
 <p>问题：图片不显示问题</p>
 <p>1、在source文件夹下新建一个imag文件夹用以存储图片，同时修改默认插入typora的图片存储位置</p>
-<p><img src="/2022/01/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/image-20220113150111325.png" alt="image-20220113150111325"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">例如：</span><br><span class="line">![img](../imag/xxx.png)</span><br></pre></td></tr></table></figure>
+<p><img src="/2022/01/14/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/imag/image-20220113150111325-1642147850707.png" alt="image-20220113150111325"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例如：![img](../imag/xxx.png)</span><br></pre></td></tr></table></figure>
 
 
       </section>
@@ -198,6 +198,7 @@
       
         <nav class="article-nav">
           
+          
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
@@ -205,21 +206,6 @@
       
         <a href="/2022/01/14/%E5%AE%9E%E4%B9%A0%E6%80%BB%E7%BB%93/" itemprop="url">
           <h2 class="card-text--title text-ellipsis">实习总结</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
-          
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-    <div class="card-text">
-      
-        <a href="/2022/01/12/bom%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">bom需求文档</h2>
         </a>
       
       <div class="card-text--row">Older</div>
@@ -261,7 +247,7 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>5</span>
+        <span>4</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
