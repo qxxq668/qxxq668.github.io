@@ -22,7 +22,7 @@
 
   
 
-  <title>Hexo</title>
+  <title>复习知识 | Hexo</title>
 
   
 
@@ -96,7 +96,7 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap"></h1>
+          <h1 class="title-wrap">复习知识</h1>
           <h2 class="title-sub-wrap">
             <strong>John Doe</strong>
             <span>发布于</span>
@@ -129,8 +129,7 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <hr>
-<h2 id="title：复习知识"><a href="#title：复习知识" class="headerlink" title="title：复习知识"></a>title：复习知识</h2><h1 id="备战阿里实习生"><a href="#备战阿里实习生" class="headerlink" title="备战阿里实习生"></a>备战阿里实习生</h1><h3 id="第一部分：排序算法"><a href="#第一部分：排序算法" class="headerlink" title="第一部分：排序算法"></a>第一部分：排序算法</h3><p>基于交换的排序：冒泡排序、快速排序</p>
+        <h1 id="备战阿里实习生"><a href="#备战阿里实习生" class="headerlink" title="备战阿里实习生"></a>备战阿里实习生</h1><h3 id="第一部分：排序算法"><a href="#第一部分：排序算法" class="headerlink" title="第一部分：排序算法"></a>第一部分：排序算法</h3><p>基于交换的排序：冒泡排序、快速排序</p>
 <p>基于插入的排序：直接插入排序、希尔排序</p>
 <p>基于选择的排序：简单选择排序、堆排序</p>
 <h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] Pop(<span class="keyword">int</span>[] numbers)</span><br><span class="line">   &#123;</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;numbers.length-<span class="number">1</span>;i++)<span class="comment">//控制轮数，共需要length-1次轮</span></span><br><span class="line">       &#123;</span><br><span class="line">           <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;numbers.length-<span class="number">1</span>-i;j++)<span class="comment">//控制每轮的交换次数</span></span><br><span class="line">           &#123;</span><br><span class="line">               <span class="keyword">if</span>(numbers[j]&gt;numbers[j+<span class="number">1</span>])</span><br><span class="line">               &#123;</span><br><span class="line">                   <span class="keyword">int</span> temp=numbers[j];</span><br><span class="line">                   numbers[j]=numbers[j+<span class="number">1</span>];</span><br><span class="line">                   numbers[j+<span class="number">1</span>]=temp;</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> numbers;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
